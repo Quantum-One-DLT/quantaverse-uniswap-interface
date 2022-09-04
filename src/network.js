@@ -16,7 +16,7 @@ import * as chains from "./constants/chains";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#ff0000",
+      main: "#03fff6",
       contrastText: "#ffffff",
     },
     secondary: {
@@ -75,7 +75,7 @@ const Web3Provider = (props) => {
           });
           setConnected(true);
         } else {
-          console.log("Wrong network mate.");
+          console.log("Wrong network.");
           setConnected(false);
         }
       });

@@ -1,12 +1,7 @@
 
-# NOTE: This is a proof-of-concept. Use it at your own risk, and it's not intended for any sort of production use.
+# NOTE: This is a proof-of-concept and in active development. Use it at your own risk - it's not intended for production use as of yet. 
 
-This is an alternative interface to Uniswap V2 contracts deployed on an EVM blockchain. We used ReactJS for the project, with the EthersJS module to connect to the blockchain via metamask in the browser, and Material-UI for the frontend. As it was a static site, we used github pages to host the application.
-
-
-Publishes to [https://ben-haslam.github.io/Alternative-Uniswap-Interface/]()
-
-Check out the blog [here](https://medium.com/clearmatics/how-i-made-a-uniswap-interface-from-scratch-b51e1027ca87)
+QuantaVerse (testnet) <> Uniswap V2 Identity/KYC integrated (in progress) Interface for DA-FI/ETH liquidity pool and others. Contracts deployed on an EVM blockchain. 
 
 # Getting Started with Create React App
 

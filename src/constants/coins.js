@@ -260,5 +260,5 @@ COINS.set(chains.ChainId.KOVAN, KOVANCoins);
 COINS.set(chains.ChainId.AUTONITY, AUTONITYCoins);
 COINS.set(chains.ChainId.DEVNET, DEVNETCoins);
 COINS.set(chains.ChainId.PARASTATE, PARASTATECoins);
-COINS.set(chains.ChainId.GANCHE, GANACHECoins)
+COINS.set(chains.ChainId.GANACHE, GANACHECoins)
 export default COINS

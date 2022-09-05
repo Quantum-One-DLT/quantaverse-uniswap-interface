@@ -11,7 +11,7 @@ export const MenuItems = [
   },
   {
     title: "Verify ID",
-    url: "/QuantaVerse-Uniswap-Interface/verify-id",
+    url: "https://quantumone.network",
     cName: "nav-links",
   },
 ];

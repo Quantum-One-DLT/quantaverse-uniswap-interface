@@ -10,8 +10,8 @@ export const MenuItems = [
     cName: "nav-links",
   },
   {
-    title: "VerifyID",
-    url: "https://quantumone.network",
+    title: "Verify ID",
+    url: "/QuantaVerse-Uniswap-Interface/Verify-id",
     cName: "nav-links",
   },
 ];

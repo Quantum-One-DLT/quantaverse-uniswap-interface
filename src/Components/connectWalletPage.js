@@ -49,7 +49,7 @@ function ConnectWalletPage() {
     <div>
       <div className="Title">
         <h1 className="navbar-logo">
-          Alternative Uniswap Interface
+          QuantaVerse Uniswap Interface
         </h1>
       </div>
 
@@ -74,8 +74,8 @@ function ConnectWalletPage() {
         alignItems="flex-end"
       >
         <p>
-          Alternative Uniswap Interface | Get AUT for use in the bakerloo testnet{" "}
-          <a href="https://faucet.bakerloo.autonity.network/">here</a>
+          QuantaVerse Uniswap Interface | Get DA-FI for rewards during Quantum One Testnet{" "}
+          <a href="https://quantumone.network">here</a>
         </p>
       </Grid>
     </div>

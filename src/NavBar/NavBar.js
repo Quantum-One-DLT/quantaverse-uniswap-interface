@@ -11,7 +11,7 @@ class NavBar extends Component {
       <nav>
         <div className="Title">
           <h1 className="navbar-logo">
-            QuantaVerse Uniswap Interface
+            QuantaVerse ID Uniswap Interface - DA-FI/ETH Pool
           </h1>
         </div>
 

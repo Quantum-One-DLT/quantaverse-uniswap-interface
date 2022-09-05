@@ -417,8 +417,8 @@ function CoinSwapper(props) {
         alignItems="flex-end"
       >
         <p>
-        Alternative Uniswap Interface | Get AUT for use in the bakerloo testnet{" "}
-          <a href="https://faucet.bakerloo.autonity.network/">here</a>
+        QuantaVerse Uniswap Interface | Get Quantum One's Testnet ERC20 Token DA-FI{" "}
+          <a href="https://quantumone.network">here</a>
         </p>
       </Grid>
     </div>

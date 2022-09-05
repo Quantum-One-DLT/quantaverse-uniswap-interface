@@ -10,7 +10,7 @@ export const MenuItems = [
     cName: "nav-links",
   },
   {
-    title: "Verify ID",
+    title: "VerifyID",
     url: "https://quantumone.network",
     cName: "nav-links",
   },

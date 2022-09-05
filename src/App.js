@@ -7,6 +7,7 @@ import CoinSwapper from "./CoinSwapper/CoinSwapper";
 import { Route } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
 import Liquidity from "./Liquidity/Liquidity";
+import { VerifyID } from "./NavBar/MenuItems";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 
 const theme = createTheme({
@@ -18,7 +19,7 @@ const theme = createTheme({
     secondary: {
       main: "#9e9e9e",
       contrastText: "#ffffff",
-    },
+    }, 
   },
 });
 
@@ -38,6 +39,13 @@ const App = () => {
                 <Route exact path="/QuantaVerse-Uniswap-Interface/liquidity">
                   <Liquidity network={network} />
                 </Route>
+                <Route 
+                  exact path="/QuantaVerse-Uniswap-Interface/verify-id"
+                  component={() => { window.location.replace('https://quantumone.network');
+                  return null;
+                  }}>
+                  <VerifyID network={network} />
+               </Route>
               </div>
             )}
           ></Web3Provider>

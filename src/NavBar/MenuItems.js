@@ -8,7 +8,8 @@ export const MenuItems = [
     title: "Liquidity",
     url: "/QuantaVerse-Uniswap-Interface/liquidity",
     cName: "nav-links",
-
+  },
+  {
     title: "Verify ID",
     url: "/QuantaVerse-Uniswap-Interface/verify-id",
     cName: "nav-links",

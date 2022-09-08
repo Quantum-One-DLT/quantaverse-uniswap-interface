@@ -1,3 +1,7 @@
+.wrapper {
+    padding: 20px;
+}
+
 body {
   background-color: #555555;
   color: rgb(199, 244, 19);

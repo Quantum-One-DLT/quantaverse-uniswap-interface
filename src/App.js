@@ -1,8 +1,9 @@
 import React from "react";
+import Login from "./Components/login/login";
 import "./App.css";
 import { ethers } from "ethers";
 import Web3Provider from "./network";
-import NarBar from "./NavBar/NavBar";
+import NavBar from "./NavBar/NavBar";
 import CoinSwapper from "./CoinSwapper/CoinSwapper";
 import { Route } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
@@ -23,15 +24,32 @@ const theme = createTheme({
   },
 });
 
+function setToken(userToken) {
+  sessionStorage.setItem('token', JSON.stringify(userToken));
+}
+
+function getToken() {
+  const tokenString = sessionStorage.getItem('token');
+  const userToken = JSON.parse(tokenString);
+  return userToken?.token
+}
+
 const App = () => {
+  const token = getToken();
+
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
+
   return (
-    <div className="App">
+    <div className="wrapper">
+     <div className="App">
       <SnackbarProvider maxSnack={3}>
         <ThemeProvider theme={theme}>
           <Web3Provider
             render={(network) => (
               <div>
-                <NarBar />
+                <NavBar />
                 <Route exact path="/QuantaVerse-Uniswap-Interface/">
                   <CoinSwapper network={network} />
                 </Route>
@@ -41,8 +59,7 @@ const App = () => {
                 </Route>
                 <Route 
                   exact path="/QuantaVerse-Uniswap-Interface/Verify-id"
-                  component={() => { window.location.replace('https://quantumone.network');
-                  return null;
+                  component={() => {window.open('https://app.fractal.id/authorize?client_id=4pVYR9NMGa1HE198Fe3VFS0IM5N2CrKCsrYO74Eg4uU&redirect_uri=https%3A%2F%2Fda-fi.io%2Fcallback&response_type=code&scope=contact%3Aread%20verification.basic%3Aread%20verification.basic.details%3Aread%20verification.liveness%3Aread%20verification.liveness.details%3Aread')
                   }}>
                </Route>
               </div>
@@ -51,6 +68,7 @@ const App = () => {
         </ThemeProvider>
       </SnackbarProvider>
     </div>
+  </div>
   );
 };
 

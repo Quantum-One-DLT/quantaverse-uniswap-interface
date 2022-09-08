@@ -10,6 +10,7 @@ import { SnackbarProvider } from "notistack";
 import Liquidity from "./Liquidity/Liquidity";
 import MenuItems from "./NavBar/MenuItems";
 import { createTheme, ThemeProvider } from "@material-ui/core";
+import useToken from './Components/useToken';
 
 const theme = createTheme({
   palette: {
@@ -24,18 +25,10 @@ const theme = createTheme({
   },
 });
 
-function setToken(userToken) {
-  sessionStorage.setItem('token', JSON.stringify(userToken));
-}
 
-function getToken() {
-  const tokenString = sessionStorage.getItem('token');
-  const userToken = JSON.parse(tokenString);
-  return userToken?.token
-}
 
 const App = () => {
-  const token = getToken();
+  const { token, setToken } = useToken();
 
   if(!token) {
     return <Login setToken={setToken} />

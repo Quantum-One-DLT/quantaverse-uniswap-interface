@@ -9,12 +9,12 @@
   
 # Added Interface Functionality
   -------------
-  Complete ID/KYC Verification (for new, unverified users)  
-  KYC Verifier (for existing users who previously completed KYC) 
-  Contracts deployed on an EVM blockchain. 
-  Web2 login overlay exists for Qrypt BLAST algorithm based post quantum secure user auth testing 
-  Web3-Provider will not attempt connection until successful login - (incredibly simplified at this juncture). 
-  KYC DID Credentialing also interoperable with Algorand, Cardano, Solana, Polkadot, Fractal.ID Polkadot Parachain
+> -  Complete ID/KYC Verification (for new, unverified users)  
+> - KYC Verifier (for existing users who previously completed KYC) 
+> - Contracts deployed on an EVM blockchain. 
+> - Web2 login overlay exists for Qrypt BLAST algorithm based post quantum secure user auth testing 
+> - Web3-Provider will not attempt connection until successful login - (incredibly simplified at this juncture). 
+> - KYC DID Credentialing also interoperable with Algorand, Cardano, Solana, Polkadot, Fractal.ID Polkadot Parachain
 
 # Web2 Login Notice
   -----------------

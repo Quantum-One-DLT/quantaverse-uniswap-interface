@@ -20,7 +20,7 @@
   -----------------
   At the moment, you must create a server.js file saved in the root of project directory. The file name is set for .gitignore. Copy and paste code below  
   into server.js file. Once you the app is running after yarn start, run server.js.
-  
+`code`  
   `const express = require('express');
    const cors = require('cors')
    const app = express();
@@ -33,7 +33,8 @@
       });
    });
    
-   app.listen(8080, () => console.log('API is running on http://localhost:8080/login'));`
+   app.listen(8080, () => console.log('API is running on http://localhost:8080/login'));
+`
    
 # Getting Started with Create React App
 

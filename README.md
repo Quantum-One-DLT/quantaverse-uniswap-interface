@@ -1,8 +1,40 @@
 
 # NOTE: This is a proof-of-concept and in active development. Use it at your own risk - it's not intended for production use as of yet. 
+=======================================================================================================================================
 
-QuantaVerse (testnet) <> Uniswap V2 Identity/KYC integrated (in progress) Interface for DA-FI/ETH liquidity pool and others. Contracts deployed on an EVM blockchain. 
+# QuantaVerse (testnet) <> Uniswap Liquidity Pools including our DA-FI/ETH v2 pool here 
 
+  https://app.uniswap.org/#/add/v2/ETH/0xeaad65885fea47a3b1258935f4ce83aab06fdd3a
+  ===============================================================================
+  
+# Added Interface Functionality
+  -------------
+  Complete ID/KYC Verification (for new, unverified users)  
+  KYC Verifier (for existing users who previously completed KYC) 
+  Contracts deployed on an EVM blockchain. 
+  Web2 login overlay exists for Qrypt BLAST algorithm based post quantum secure user auth testing 
+  Web3-Provider will not attempt connection until successful login - (incredibly simplified at this juncture). 
+  KYC DID Credentialing also interoperable with Algorand, Cardano, Solana, Polkadot, Fractal.ID Polkadot Parachain
+
+# Web2 Login Notice
+  -----------------
+  At the moment, you must create a server.js file saved in the root of project directory. The file name is set for .gitignore. Copy and paste code below  
+  into server.js file. Once you the app is running after yarn start, run server.js.
+  
+  `const express = require('express');
+   const cors = require('cors')
+   const app = express();
+   
+   app.use(cors());
+   
+   app.use('/login', (req, res) => {
+        res.send({
+      ` ` token: 'test123'
+      });
+   });
+   
+   app.listen(8080, () => console.log('API is running on http://localhost:8080/login'));`
+   
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

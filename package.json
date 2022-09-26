@@ -9,6 +9,8 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "awilix": "^7.0.3",
+    "axios": "^0.27.2",
     "bignumber": "^1.1.0",
     "bootstrap": "^5.0.1",
     "cors": "^2.8.5",

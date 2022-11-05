@@ -1,8 +1,8 @@
 import { Contract, ethers } from "ethers";
 import { fetchReserves, getDecimals } from "../ethereumFunctions";
 
-const ERC20 = require("../build/ERC20.json");
-const PAIR = require("../build/IUniswapV2Pair.json");
+const ERC20 = require("../scbuild/ERC20.json");
+const PAIR = require("../scbuild/IUniswapV2Pair.json");
 
 // Function used to add Liquidity to any pair of tokens or token-AUT
 // To work correctly, there needs to be 9 arguments:
